@@ -38,11 +38,26 @@
       <a href="#" class="logo d-flex align-items-center me-auto">
          
         <img src="assets/images/smz-money.png" alt="">
-        
+        <!-- <h1 class="sitename">eNno</h1> -->
       </a>
 
        <nav id="navmenu" class="navmenu">
-        <ul>          
+        <ul>
+          <!-- <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+           
+          <li><a href="#">Contact</a></li>
+
+          <li class="dropdown language-dd">
+            <a href="#" class="lauddm"><span>Select Language</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">English</a></li>
+              <li><a href="#">Malay</a></li>
+              <li><a href="#">Korean</a></li>
+              <li><a href="#">Tamil</a></li>
+            </ul>
+          </li> -->
 
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -64,85 +79,66 @@
 
       <div class="contact">
 
-          <div class="container" data-aos="fade-up">
-                   
-              <div class="row"> 
+       
+
+              <div class="container" data-aos="fade-up">
+                  <div class="row">
+                      <div class="col-md-8 mx-auto">
+
+                          <div class="mt-5 mb-3 text-center ">
+                              <h4>   SMZ Exchange is Authorized and Regulated by Reserve Bank Please Check Links to Verify the Authorization   </h4>
+                          </div>
+
+                          <div class="row loginPage" style="margin: 10px 0 0 0; padding:10px;"> 
 
 
-              <div class="col-lg-4"> 
+                            <div class="col-md-2 col-lg-2"> </div>   
+
+                            <div class="col-md-5 col-lg-5">
+
+                                <select class="form-select form-select-lg mb-3" aria-label="form-select-lg example">
+                                    <option selected="">Select Language</option>
+                                    <option value="1"> Malay</option>
+                                    <option value="2">Korean</option>
+                                    <option value="2">Tamil</option>
+                                </select>
+                             
+                            </div>
+                             
+
+                            <div class="col-md-4 col-lg-3">
+                                                      
+                            <button onclick ="window.location.href='login.html';" type="submit" class="login-button w-100">LOG-IN</button>
+
+                            </div>
+
+                            <div class="col-md-3 col-lg-2"> </div> 
+
+                         </div>
 
 
-                <div class="services pt-3">
-                    <div class="loginpage service-item position-relative pt-5">
-                    <div class="icon">
-                      <i class="bi bi-envelope"></i>
-                    </div>
-                    <div class="info-new-reg">
-                      <p> <strong> NB - Pls Check Your E-mail And Link On Reset password </strong> 
-                      </p>
-                    </div>
-                     
+                         <div class="text-center ">
+                             <div class="col-md-6 mx-auto">
+
+                            <center>
+                                <div class="bmenu">
+
+                                  <ul>
+                                   
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Links</a></li>
+
+                                  </ul>
+
+                                </div>
+
+                            </center>
+
+                             </div>
+                          </div>
                   </div>
-                </div>
-
-
               </div>
-
-              <div class="col-lg-2">   </div>
-
-              <div class="col-lg-6">
-
-                <div class="login-div aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-
-                        <div class="login-div-header">
-                        <span> Reset Password </span>
-                       </div>
-
-                       <div class="row login-div-body gy-2">
-
-                        <div class="col-md-12">
-                          <label for="email-field" class="pb-2">Email Address </label>
-                          <input type="email" class="form-control" name="email" id="email-field" required="" placeholder="yourmail@mail.com">
-                        </div>
-
-
-                        <div class="col-md-12">
-                          <label for="name-field" class="pb-2">Phone Number</label>
-                          <input type="text" name="name" id="Phone-number" class="form-control" required="" placeholder="+91 8903390390">
-                        </div>
-
-
-                        <div class="col-md-12">
-                          <label for="subject-field" class="pb-2">Password</label>
-                          <input type="text" class="form-control" name="Password" id="subject-field" required="" placeholder="XXXXXXXXXX">
-                        </div>
-
-                        <div class="col-md-12">
-                          <label for="subject-field" class="pb-2">Re-Enter Password</label>
-                          <input type="text" class="form-control" name="Password" id="subject-field" required="" placeholder="XXXXXXXXXX">
-                        </div>
-                        
-
-                        <div class="col-md-12 mt-3">
-                          <!-- <button type="submit" class="reg-button">FORGOT PASSWORD</button> -->
-                          <button data-bs-toggle="modal" data-bs-target="#myModal"
- type="submit" class="submit-but">Sumbit to Reset</button>
-
-
-                        </div>
-
-                        
-
-                      </div>
-              </div>
-
-              </div>
-
-            </div>
-
-
-            
-          </div>
 
 
      </div>
@@ -251,27 +247,23 @@
   <script src="assets/js/main.js"></script>
 
 
- <!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog modal-md" style="margin: 10% auto;">
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header" style="display:block;">
-        <h5 class="modal-title"> <center> <b>Hi, Rajesh </center></h5>
-        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"></button> -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-
-      <!-- Modal body -->
-      <div class="message-try">
-        <h6> Congratulations, Your Password has been Reset Successfully . </h6> 
+      <div class="modal-body">
+        ...
       </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer pb-3" style="display:block;">
-       <center> <button onclick ="window.location.href='login.html';" type="button" class="btn btn-success">Done</button> </center> 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
-
     </div>
   </div>
 </div>

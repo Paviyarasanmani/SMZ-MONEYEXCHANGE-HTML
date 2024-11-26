@@ -1112,13 +1112,13 @@ section,
 }
 
 .services .service-item p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
+    line-height: 26px;
+    font-size: 20px;
+    margin-bottom: 0;
 }
 
 .services .service-item:hover {
-  border-color: var(--accent-color);
+  border-color:#cc0000;
 }
 
 .services .service-item:hover h3 {
